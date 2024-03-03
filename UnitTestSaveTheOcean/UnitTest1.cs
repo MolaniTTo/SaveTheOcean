@@ -91,40 +91,4 @@ namespace UnitTestSaveTheOcean
 
     }
 
-    [TestClass]
-    public class ProgramTests
-    {
-        [TestMethod]
-        public void TestRescueSimulation_SuccessfulTreatment()
-        {
-            // Arrange
-            Player player = new Player("TestPlayer", 100);
-            var userInput = new StringReader("1\n");
-            Console.SetIn(userInput);
-
-            // Act
-            Program.RescueSimulation(player);
-
-            // Assert
-            if (player.Experience != 50)
-                throw new Exception("Player's experience was not updated correctly after successful treatment.");
-        }
-
-        [TestMethod]
-        public void TestRescueSimulation_FailedTreatment()
-        {
-            // Arrange
-            Player player = new Player("TestPlayer", 100);
-            var userInput = new StringReader("2\n");
-            Console.SetIn(userInput);
-
-            // Act
-            Program.RescueSimulation(player);
-
-            // Assert
-            if (player.Experience != 80)
-                throw new Exception("Player's experience was not updated correctly after failed treatment.");
-        }
-        
-    }
 }

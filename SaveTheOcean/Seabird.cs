@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SaveTheOcean
 {
@@ -17,7 +13,7 @@ namespace SaveTheOcean
             Type = type;
         }
 
-        public override int CalculateNewGA(int ga, bool locationCare)
+        public override int CalculateNewGA(int ga, bool locationCare) // override the CalculateNewGA method
         {
             int x = 5;
             int newGa = ga - (ga * ga + x);

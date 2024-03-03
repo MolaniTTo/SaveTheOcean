@@ -12,7 +12,7 @@ namespace SaveTheOcean
             Type = type;
         }
 
-        public override int CalculateNewGA(int ga, bool locationCare)
+        public override int CalculateNewGA(int ga, bool locationCare) // override the CalculateNewGA method
         {
             int x = locationCare ? 25 : 0;
             int newGa = ga - (int)(Math.Log10(ga)) - x;

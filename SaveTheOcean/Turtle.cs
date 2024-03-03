@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace SaveTheOcean
 {
     public class Turtle : Animal
@@ -12,7 +11,7 @@ namespace SaveTheOcean
             Type = type;
         }
 
-        public override int CalculateNewGA(int ga, bool locationCare)
+        public override int CalculateNewGA(int ga, bool locationCare) // override the CalculateNewGA method
         {
             int x = 5;
             int newGa = ga - ((ga - 2) * (2 * ga + 3)) - x;

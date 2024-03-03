@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace SaveTheOcean
 {
     public abstract class Animal
@@ -14,7 +13,7 @@ namespace SaveTheOcean
             Weight = weight;
         }
 
-        public override string ToString()
+        public override string ToString() // override the ToString method
         {
             return $"{Species} - {Weight} kg";
         }

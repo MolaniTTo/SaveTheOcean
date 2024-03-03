@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace SaveTheOcean
 {
     public class Player
@@ -14,12 +13,12 @@ namespace SaveTheOcean
             Experience = experience;
         }
 
-        public void UpdateExperience(int points)
+        public void UpdateExperience(int points) // update the experience
         {
             Experience += points;
         }
 
-        public override string ToString()
+        public override string ToString() // override the ToString method
         {
             return $"Player: {Name}, Experience: {Experience}";
         }
